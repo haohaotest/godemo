@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" xml:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* 清除默認樣式 */
+        * {
+            margin: 0;
+            padding: 0;
+            /* 內減模式 */
+            box-sizing: border-box;
+        }
+
+        /* body */
+        body {
+            background-color: white;
+        }
+
+        /* 版心 */
+        .wrapper {
+            margin: auto;
+            width: 1200px;
+
+            background-color:chocolate ;
+
+            /*border: 1px white solid;*/
+        }
+
+        /* 頂端功能欄 */
+        #topDiv {
+            background-color: white;
+
+            color: white;
+
+            /*text-align: center;*/
+
+            line-height: 55px;
+
+            height: 75px;
+
+            border: 1px white solid;
+        }
+
+        /* LOGO */
+        #topDiv img {
+            height: 75px;
+        }
+
+        #rightDiv {
+            background-color:chocolate ;
+
+            width: 75px;
+            height: 500px;
+
+            color: white;
+
+            border: 1px white solid;
+        }
+        #rightInfoDiv  {
+            margin-top: 200px;
+        }
+
+        /* 裝輪播圖的Div */
+        #imageDiv {
+            height: 500px;
+
+            background-color: skyblue;
+        }
+
+        /* 輪播圖*/
+        #imageDiv img {
+            width: 100%;
+            height: 500px;
+        }
+
+        .imageLiDiv {
+            width: 300px;
+            height: 300px;
+
+            background-color: grey;
+
+            border: 1px white solid;
+        }
+
+    </style>
+</head>
+<body>
+  <div class="wrapper">
+      <div id="topDiv">
+          <a href="lol.html"><img src="static/image/lollogo.png"></a>
+      </div>
+  </div>
+  <div id="imageDiv"><img src="static/image/lilol.jpg"></div>
+    <div class="wrapper">
+        <div class="imageLiDiv">我是圖片1</div>
+        <div class="imageLiDiv">我是圖片2</div>
+        <div class="imageLiDiv">我是圖片3</div>
+
+
+        <!--<div id="rightDiv">-->
+        <!--    <div id="rightInfoDiv">-->
+        <!--        <span>分類</span><br/>-->
+        <!--        <span>價目表</span><br/>-->
+        <!--        <span>價格表</span><br/>-->
+        <!--    </div>-->
+        <!--</div>-->
+    </div>
+</body>
+</html>
